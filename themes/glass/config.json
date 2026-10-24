@@ -2,11 +2,9 @@
   "dock_apps": [
     "com.netflix.ninja",
     "com.google.android.youtube.tv",
-    "com.amazon.amazonvideo.livingroom",
-    "com.disney.disneyplus",
-    "com.wbd.stream",
-    "com.apple.atve.androidtv.appletv"
+    "com.amazon.amazonvideo.livingroom"
   ],
+  "recent_dock_app": true,
   "background_color": "#090C14",
   "wallpaper": true,
   "cinematic_home": true,
@@ -17,3 +15,4 @@
   "focus_overshoot": false,
   "advanced_effects": true
 }
+
