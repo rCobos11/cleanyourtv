@@ -136,11 +136,10 @@ any violation drops that one card, with a log line and no other effect.
 6. Placement. A shown card stands in for every tile of its package: the ordinary tile is not shown
    next to it. A package in `hidden_apps` (`config.xml`) shows neither a tile nor a card. A package in
    `dock_apps` gets its card in that dock slot. Other cards sort right after the configured dock apps
-   and before the alphabetical grid, by label. On the default configuration, four dock apps and four
-   columns, that is the first grid tile. With fewer `dock_apps` than columns, the free dock slots take
-   the first grid apps (`fill_dock`, on by default), so a shown card fills the free dock slot, since
-   the dock is then simply the first row; with `fill_dock` false the free slots stay empty and a
-   shown card is the first grid tile. In the dock, the top shelf shows the label and the glow uses
+   and before the alphabetical grid, by label. With `recent_dock_app` enabled, up to three configured
+   apps are pinned and the next slot holds the most recently opened eligible app; without a recent
+   launch it stays empty. With `recent_dock_app` disabled, `fill_dock` controls the old behavior. In
+   the dock, the top shelf shows the label and the glow uses
    the accent; in the grid, the name line under the focused tile shows the label and the caption,
    as far as they fit on one line. A card uses the app's own banner (or icon) for its artwork.
 7. Hide. A hidden card leaves the app's ordinary tile exactly as before: hiding a card never
@@ -185,3 +184,4 @@ W TvHomeCards: io.example.big: label is longer than 24 characters
 
 Read them with `adb logcat -s TvHomeCards` (or `tools/tv.py 'logcat -d -s TvHomeCards'`). A rejected
 card has no other effect: the app keeps its ordinary tile.
+
