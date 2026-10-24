@@ -1,5 +1,6 @@
 {
-  "dock_apps": ["com.netflix.ninja", "com.amazon.amazonvideo.livingroom", "com.google.android.youtube.tv", "in.startv.hotstar"],
+  "dock_apps": ["com.netflix.ninja", "com.amazon.amazonvideo.livingroom", "com.google.android.youtube.tv"],
+  "recent_dock_app": true,
   "hidden_apps": ["com.mediatek.wwtv.tvcenter", "com.mitv.gallery"],
   "columns": 4,
   "rows_below_dock": 0,
@@ -7,3 +8,4 @@
   "background_color": "#000000",
   "wallpaper": false
 }
+
